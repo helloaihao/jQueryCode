@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		abbr[title] {border-bottom: 1px dotted #999;}
+		abbr[title]:hover {cursor: help;}
+		abbr {content: "12345145"}
+
+		.d1 {width: 100%; height: 20px; background-color: red; margin-bottom: 30px;}
+		.d2 {width: 100%; height: 20px; background-color: black; margin-top: 40px;}
+
+		.d3 {width: 45%; height: 20px; background-color: red;  float: left; position: relative; left: 300px; top: 10px;}
+		.d4 {width: 45%; height: 20px; background-color: black; float: right;}
+
+		.d5 {width: 45%; height: 20px; background-color: red;  float: left; margin-top: 10px;}
+		.d6 {width: 45%; height: 20px; background-color: black;}
+
+		.news {background-color: gray; border: solid 1px black;}
+		.news img {float: left;}
+		.news p {float: right; clear: left;}
+
+		.clearfix:after {content: " "; height: 0; visiblility: hidden; display: block; clear: both;}
+
+		h1 {padding-left: 30px; background: url(./1.jpg) no-repeat left center;}
+
+		ul {list-style: none;}
+		li {display: inline-block;}
+		li + li{margin-left: 5px;}
+		li a {display: block; width: 100px; height: 20px; line-height: 20px; color: #000; text-decoration: none; background-color: gray;}
+		.ll a:link{background-color: red;}
+		.vv a:visited{background-color: blue;}
+		.hh a:hover{background-color: yellow;}
+		.aa a:active{background-color: green;}
+		
+		a.tooltip {position: relative;}
+		a.tooltip span {display: none;}
+		a.tooltip:hover span {display: block; position: absolute; top: 1em; left: 2em; width: 100px; height:20px;}
+	</style>
+</head>
+<body>
+	<abbr class="clearfix" title="Cascading Style Sheet">CSS</abbr>
+	<abbr>123</abbr>
+	<br><hr>
+
+	<div class="d1"></div>
+	<div class="d2"></div>
+	<br><hr>
+
+	<div class="d3"></div>
+	<div class="d4"></div>
+	<br><hr>
+
+	<div class="d5"></div>
+	<div class="d6"></div>
+	<br><hr>
+
+	<div class="news clearfix">
+		<img src="1.jpg" alt="">
+		<p>耒阳市文联主席熊艾春在耒阳社区网站办公室“讨要说法”
+		</p>
+		<p>新湘报7月14日湖南衡阳讯7月4日上午10时许，湖南省耒阳市(湖南省衡阳市下辖的一个县级市)耒阳社区网站来了几名不速之客，一名男子在办公室大声吆喝，要求网站负责人在五分钟之内出现，否则将砸毁办公室电脑。
+		</p>
+		<p>该男子记时结束后，网站负责人并没有出现，其随即将网站一台办公电脑砸毁。后据耒阳警方了解，该男子为耒阳市文学艺术界联合会(以下简称耒阳市文联)党组书记、主席熊艾春。耒阳社区网站负责人告诉新湘报，熊艾春之所以怒砸网站办公电脑，源于不久前他们网站上的一个帖子。7月1日，耒阳市文联主席熊艾春用“耒阳小竹子”的网名在耒阳社区
+		</p>
+	</div>
+	<br><hr>
+
+	<h1>12345</h1>
+	<br><hr>
+
+	<ul>
+		<li class="ll"><a href="http://www.baidu.com">link测试</a></li>
+		<li class="vv"><a href="http://www.hao123.com">visited测试</a></li>
+		<li class="hh"><a href="3">hover测试</a></li>
+		<li class="aa"><a href="4">active测试</a></li>
+	</ul>
+	<br><hr>
+	
+	<p>
+		<a href="#" class="tooltip">链接</a>
+		<span>（这是链接）</span>
+		该男子记时结束后，网站负责人并没有出现，其随即将网站一台办公电脑砸毁
+	</p>
+
+
+
+</body>
+</html>

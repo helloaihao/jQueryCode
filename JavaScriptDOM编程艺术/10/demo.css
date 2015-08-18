@@ -1,0 +1,39 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.image-nav {
+	width: 500px;
+	height: 260px;
+	margin: 0 auto 0 auto;
+/*	background-color: black;*/
+}
+
+.image-small {
+	float: left;
+}
+
+.image-small ul {
+	list-style-type: none;
+}
+
+.image-small ul li {
+	width: 68px;
+	height: 40px;
+	display: block;
+}
+
+.image-small ul li+li {
+	margin-top: 5px;
+}
+
+.image-big {
+	width: 425px;
+	height: 260px;
+	overflow: hidden;
+	position: relative;
+	float: right;
+}
