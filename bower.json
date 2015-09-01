@@ -1,0 +1,20 @@
+{
+  "name": "jQueryCode",
+  "version": "1.0.0",
+  "homepage": "https://github.com/helloaihao/jQueryCode",
+  "authors": [
+    "helloaihao <543160349@qq.com>"
+  ],
+  "description": "some code of the jQueryCode",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
