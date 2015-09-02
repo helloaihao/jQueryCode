@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.mv-img {
+	height: 200px;
+	width: 90%;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888;
+	position: absolute;
+}
+
+.text {
+	height: 200px;
+	width: 90%;
+	padding: 60px 0 0 90px;
+	position: absolute;
+	display: none;
+}
