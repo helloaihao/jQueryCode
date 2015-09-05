@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery_简易上下轮播</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        html
+        {
+            background-color: #000;
+        }
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        #picShow img
+        {
+            width: 468px;
+            height: 228px;
+        }
+        #picShow
+        {
+            background-color: #fff;
+            position: relative;
+        }
+        #picTitle
+        {
+            position: absolute;
+            bottom: 0;
+            z-index: 11;
+            width: 468px;
+            height: 30px;
+            line-height: 30px;
+            background: rgba(0,0,0,0.7);
+            color: #999;
+            text-indent: 10px;
+            font-family: "Microsoft YaHei";
+        }
+        #communityActivities
+        {
+            margin: 0 auto;
+            width: 468px;
+            height: 228px;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+    <div id="communityActivities">
+        <div id="picShow">
+            <img alt="" src="F:/jQuery/jQueryCode/jQueryCode/jQueryCode/images/1.jpg" />
+            <img alt="" src="F:/jQuery/jQueryCode/jQueryCode/jQueryCode/images/2.jpg" />
+            <img alt="" src="F:/jQuery/jQueryCode/jQueryCode/jQueryCode/images/3.jpg" />
+            <img alt="" src="F:/jQuery/jQueryCode/jQueryCode/jQueryCode/images/4.jpg" />
+            <img alt="" src="F:/jQuery/jQueryCode/jQueryCode/jQueryCode/images/5.jpg" />
+        </div>
+        <div id="picTitle">
+            这是新闻标题啊</div>
+    </div>
+    <script type="text/javascript">
+        function picTurn(elementId) {
+            var $picbox = $(elementId),
+                $pic_first = $picbox.find('img:first');
+            $picbox.find('img:last').after($pic_first.clone());
+            var $top = -parseInt($pic_first.height());
+            $top += 'px';
+            console.info($top);
+            $picbox.animate({ top: $top }, "slow", function () {
+                $pic_first.remove();
+                $(elementId).css('top', 0);
+                setTimeout("picTurn('" + elementId + "')", 1000);
+            });
+        }
+        $(function () {
+            picTurn('#picShow');
+        });    
+    </script>
+</body>
+</html>
